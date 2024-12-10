@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Book {
+public:
+    string title;
+    string author;
+    double price;
+
+    void displayDetails() {
+        cout << "The book \"" << title << "\" by " << author 
+             << " costs $" << price << "." << endl;
+    }
+};
+
+int main() {
+
+    Book book1;
+    book1.title = "halo doc";
+    book1.author = "delvin";
+    book1.price = 9.99;
+
+    Book book2;
+    book2.title = "big boss";
+    book2.author = "delvin";
+    book2.price = 12.99;
+
+  
+    book1.displayDetails();
+    book2.displayDetails();
+
+    return 0;
+}
